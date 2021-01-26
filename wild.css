@@ -54,8 +54,8 @@ a {
 
 .menu {
   display: flex;
-
   width: 490px;
+  margin-top: 20px;
 }
 
 .list {
@@ -69,11 +69,16 @@ a {
 .list__item {
   font-family: Open Sans;
   font-size: 24px;
+  font-weight: 400;
   line-height: 250%;
 }
 
-.list__item,
-.list__item1 {
+.list__item1:hover {
+  text-decoration: underline;
+}
+
+.list__item2:hover {
+  color: #a76400;
 }
 
 .list__button {
@@ -176,6 +181,12 @@ a {
   box-sizing: border-box;
   border: none;
   align-self: center;
+  background-color: transparent;
+}
+
+.buttom-left:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
 }
 
 .img1 {
@@ -215,6 +226,12 @@ a {
   box-sizing: border-box;
   border: none;
   align-self: center;
+  background-color: transparent;
+}
+
+.buttom-right:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
 }
 
 .pimg {
@@ -265,6 +282,8 @@ a {
   border: 1px solid #666666;
   padding: 15px;
   background: rgba(255, 255, 255, 0);
+  font-size: 24px;
+  font-family: Open Sans;
 }
 
 .form__button {
@@ -274,6 +293,12 @@ a {
   background: #cd6326;
   border-radius: 0px 5px 5px 0px;
   color: #f7f7f7;
+  font-size: 24px;
+  font-family: Open Sans;
+}
+
+.form__button:hover {
+  cursor: pointer;
 }
 
 .footer {
@@ -305,6 +330,10 @@ a {
   color: #f7f7f7;
 }
 
+.listF__item:hover {
+  text-decoration: underline;
+}
+
 .icons {
   margin-top: 160px;
   width: 240px;
@@ -314,6 +343,16 @@ a {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+}
+
+.icon_link {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.icon_link:hover {
+  cursor: pointer;
 }
 
 .icon_f {
@@ -349,6 +388,7 @@ a {
 
 .list__button:hover {
   background: #cd6326;
+  cursor: pointer;
 }
 
 .list__button:active {
@@ -357,6 +397,7 @@ a {
 
 .survival-button:hover {
   background: #fd9355;
+  cursor: pointer;
 }
 
 ::-webkit-input-placeholder {
