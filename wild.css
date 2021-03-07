@@ -54,7 +54,7 @@ a {
 
 .menu {
   display: flex;
-  width: 490px;
+  width: 480px;
   margin-top: 20px;
 }
 
@@ -68,8 +68,8 @@ a {
 
 .list__item {
   font-family: Open Sans;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 23px;
+  font-weight: 100;
   line-height: 250%;
 }
 
@@ -107,6 +107,7 @@ a {
 .title {
   margin-top: 120px;
   font-family: Open Sans;
+  font-weight: 400;
   font-size: 48px;
   line-height: 150%;
   letter-spacing: 2px;
@@ -125,6 +126,7 @@ a {
 .survival-button {
   padding: 16px 42px 17px 42px;
   width: 160px;
+  height: 60px;
   border-radius: 5px;
   background: #cd6326;
   border: none;
@@ -132,6 +134,15 @@ a {
   font-size: 23px;
   color: #f7f7f7;
   font-family: Roboto;
+}
+
+.survival-button:hover {
+  background: #e39128;
+  cursor: pointer;
+}
+
+.survival-button:active {
+  background: #8f5613;
 }
 
 .LatestArticles {
@@ -257,7 +268,7 @@ a {
 
 .notified__p {
   display: flex;
-  margin-top: 239px;
+  margin-top: 240px;
   text-align: center;
   font-family: Open Sans;
   font-size: 27px;
@@ -278,7 +289,7 @@ a {
 
 .form__field {
   width: 540px;
-  height: 60px;
+  height: 62px;
   border: 1px solid #666666;
   padding: 15px;
   background: rgba(255, 255, 255, 0);
@@ -288,17 +299,22 @@ a {
 
 .form__button {
   width: 120px;
-  height: 59px;
+  height: 62px;
   border: none;
   background: #cd6326;
   border-radius: 0px 5px 5px 0px;
   color: #f7f7f7;
-  font-size: 24px;
-  font-family: Open Sans;
+  font-size: 23px;
+  font-family: roboto;
 }
 
 .form__button:hover {
+  background: #e39128;
   cursor: pointer;
+}
+
+.form__button:active {
+  background: #8f5613;
 }
 
 .footer {
@@ -314,6 +330,7 @@ a {
 
 .menuFooter {
   margin-top: 150px;
+  padding: 0 0 0 9px;
   width: 480px;
 }
 
@@ -326,7 +343,7 @@ a {
 .listF__item {
   font-family: Open Sans;
   font-size: 23px;
-  line-height: 261%;
+  line-height: 60px;
   color: #f7f7f7;
 }
 
@@ -392,16 +409,15 @@ a {
 }
 
 .list__button:active {
-  background: #a76400;
-}
-
-.survival-button:hover {
-  background: #fd9355;
-  cursor: pointer;
+  background: #8f5613;
 }
 
 ::-webkit-input-placeholder {
-  font-size: 24px;
-  font-family: Open Sans;
+  font-size: 23px;
+  font-family: roboto;
   line-height: 250%;
+}
+
+.listF__item1 {
+  padding-right: 5px;
 }
